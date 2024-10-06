@@ -1,0 +1,305 @@
+
+.navbar-nav {
+  padding-left: 230px;
+}
+
+.nav-link:hover,
+.nav-link.active:hover {
+  color: red;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.input-group-text {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.input-group-text:hover {
+  color: red;
+}
+
+.text-head {
+  font-size: 26px;
+
+}
+
+.card-img-overlay {
+  padding-top: 110px;
+}
+
+
+.card-header {
+  font-family: "Manrope", sans-serif;
+}
+
+.ticket-btn {
+  height: 30px;
+  padding: 0 15px;
+  white-space: nowrap;
+}
+
+.product-card {
+  margin-right: 25px;
+}
+
+.product-card-title {
+  font-size: 20px;
+}
+
+.product-card-text {
+  font-size: 14px;
+}
+
+.bar-text {
+  font-size: 10px;
+}
+
+.border-dotted-top-bottom {
+  border-top: 2px dotted rgba(0, 0, 0, 0.2);
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.2);
+  border-left: none;
+  border-right: none;
+}
+
+/* Progress Bar Section */
+
+.bar-details {
+  padding: 0 2px;
+  margin: 0;
+}
+
+.mt-100 {
+  margin-top: 200px;
+}
+
+.progress {
+  width: 120px;
+  height: 120px !important;
+  margin: 0;
+  float: none;
+  background: rgb(255, 255, 255);
+  position: relative;
+  line-height: 120px;
+}
+
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 10px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: bold;
+  color: #040404;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 120px;
+}
+
+/* RED BAR */
+.progress.red .progress-bar {
+  border-color: rgb(204, 58, 58);
+}
+
+.progress.red .progress-left .progress-bar {
+  animation: loading-50 1s linear forwards 1s;
+}
+
+.progress.red .progress-right .progress-bar {
+  animation: loading-90 1s linear forwards;
+}
+/* GREEN BAR */
+.progress.green .progress-bar {
+  border-color: #0b6720;
+}
+
+.progress.green .progress-left .progress-bar {
+  animation: loading-50 1.5s linear forwards 1s;
+}
+
+.progress.green .progress-right .progress-bar {
+  animation: loading-90 1.5s linear forwards;
+}
+/* YELLOW BAR */
+.progress.yellow .progress-bar {
+  border-color: #fdba04;
+}
+
+.progress.yellow .progress-left .progress-bar {
+  animation: loading-50 1s linear forwards 1s;
+}
+
+.progress.yellow .progress-right .progress-bar {
+  animation: loading-87 1s linear forwards;
+}
+/* BLUE BAR */
+.progress.blue .progress-bar {
+  border-color: #049dff;
+}
+
+.progress.blue .progress-left .progress-bar {
+  animation: loading-50 1.5s linear forwards 1s;
+}
+
+.progress.blue .progress-right .progress-bar {
+  animation: loading-80 1.8s linear forwards;
+}
+
+@keyframes loading-80 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg);
+  }
+}
+
+@keyframes loading-87 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(120deg);
+    transform: rotate(110deg);
+  }
+}
+
+@keyframes loading-90 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes loading-50 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-95 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.progress-container .progress-text {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.progress-container .progress-text h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.progress-container .progress-text p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.accordion-item {
+  border-top: none;
+  border-bottom: 2px solid rgba(187, 184, 184, 0.2);
+  border-left: none;
+  border-right: none;
+}
+/* .accordion-row {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+} */
+/* @media (max-width: 768px) {
+  .accordion-row {
+    flex-direction: column;
+  }
+
+  .accordion-item-container ,
+  .accordion-img-container  {
+    margin: 0;
+  }
+} */
+
